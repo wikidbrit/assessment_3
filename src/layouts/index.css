@@ -1,8 +1,8 @@
 :root {
-  --bg: #fdfdfd;
+  --bg: linear-gradient(45deg, rgba(3,85,101,1) 0%, rgba(98,0,87,1) 100%);
   --meta: #888;
   --accent: #3178cd;
-  --text: black;
+  --text: white;
   --base: 1.5rem;
 }
 
@@ -32,7 +32,7 @@ html {
   padding: 0;
 
   color: var(--text);
-  background-color: var(--bg);
+  background: var(--bg);
 }
 
 #slide {
@@ -48,6 +48,12 @@ html {
   text-align: center;
 
   -webkit-overflow-scrolling: touch;
+}
+
+p {
+  line-height: 150%;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #slide ul {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+
 export default ({ data, transition }) => (
   <div style={{'width': '100%'}}>
     <div
@@ -8,6 +9,7 @@ export default ({ data, transition }) => (
       dangerouslySetInnerHTML={{ __html: data.slide.html }}
     />
   </div>
+
 );
 
 export const query = graphql`
