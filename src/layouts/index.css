@@ -16,6 +16,13 @@
   box-sizing: border-box;
 }
 
+canvas {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  }
+
+
 body,
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
@@ -25,12 +32,12 @@ html {
   font-feature-settings: 'calt', 'liga', 'hist', 'onum', 'pnum';
 
   overflow: auto;
-
+  z-index: 5;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-
+  z-index: 5;
   color: var(--text);
   background: var(--bg);
 }
@@ -44,7 +51,7 @@ html {
   width: 100vw;
   height: 100vh;
   padding: 1rem;
-
+  z-index: 5;
   text-align: center;
 
   -webkit-overflow-scrolling: touch;
@@ -54,16 +61,18 @@ p {
   line-height: 150%;
   width: 75%;
   margin: 0 auto;
+  z-index: 5;
 }
 
 #slide ul {
     text-align: left;
     margin-left: 32px;
+    z-index: 5;
 }
 
 a {
   color: var(--text);
-
+  z-index: 999;
   text-decoration-skip-ink: auto;
 }
 
@@ -72,22 +81,25 @@ blockquote {
   font-weight: bold;
 
   width: 50vw;
-
+  z-index: 5;
   text-align: left;
 }
 
 @media (max-width: 900px) {
   blockquote {
     width: 90vw;
+    z-index: 5;
   }
 }
 
 blockquote div::before {
   content: '\201C';
+  z-index: 5;
 }
 
 blockquote div::after {
   content: '\201D';
+  z-index: 5;
 }
 
 cite {
@@ -96,12 +108,13 @@ cite {
   font-style: normal;
 
   display: block;
-
+  z-index: 5;
   margin-top: 2rem;
 }
 
 cite::before {
   content: '\2014\00a0';
+  z-index: 5;
 }
 
 pre {
@@ -111,7 +124,7 @@ pre {
   overflow-x: scroll;
 
   margin: 2rem 0;
-
+  z-index: 5;
   text-align: left;
 
   color: var(--accent);
@@ -120,15 +133,17 @@ pre {
 code {
   font-family: menlo, monospace;
   font-size: 90%;
+  z-index: 5;
 }
 
 a:hover {
   color: var(--accent);
+  z-index: 999;
 }
 
 h1 {
   font-size: 200%;
-
+  z-index: 5;
   margin-bottom: 0.5rem;
 }
 
@@ -136,11 +151,13 @@ h2 {
   font-size: 120%;
   width: 75%;
   margin: 0 auto 0.5rem auto;
+  z-index: 5;
 }
 
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  z-index: 5;
 }
 
 header {
@@ -149,7 +166,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,16 +180,18 @@ header {
 header a,
 time {
   text-decoration: none;
-
+  z-index: 5;
   color: var(--meta);
 }
 
 header a:hover {
   color: var(--meta);
+  z-index: 5;
 }
 
 header span {
   color: var(--text);
+  z-index: 5;
 }
 
 /*custom classes*/
@@ -181,13 +200,13 @@ header span {
   font-size: small;
   width: 50%;
   margin: 0 auto;
+  z-index: 5;
 }
 
 .ulItem {
-  font-style: italic;
-  font-family: 'Courier New', Courier, monospace;
+  z-index: 5;
 }
 
-canvas {
-  position: absolute;
+img {
+  z-index: 4;
 }

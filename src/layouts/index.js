@@ -85,7 +85,7 @@ class TemplateWrapper extends Component {
 
     return (
       <div>
-        <ParticleBackground settings={settings} />
+
         <p
           style={{
             fontSize: '10pt',
@@ -105,16 +105,20 @@ class TemplateWrapper extends Component {
           title={site.siteMetadata.title}
           date={date}
         />
+
         <Swipeable
           onSwipedLeft={this.swipeLeft}
           onSwipedRight={this.swipeRight}
         >
           <Transition location={location}>
-            <div id="slide" style={{ width: '100%' }}>
+            <div id="slide" style={{ width: '100%', zIndex:'999', position:'absolute' }}>
               {children}
             </div>
+            
           </Transition>
+
         </Swipeable>
+        <ParticleBackground settings={settings} style={{zIndex:'1'}} />
       </div>
     );
   }
