@@ -182,3 +182,8 @@ header span {
   width: 50%;
   margin: 0 auto;
 }
+
+.ulItem {
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
