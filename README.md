@@ -1,4 +1,6 @@
-> 🚨 This starter is now archived in favor of [`gatsby-theme-mdx-deck`](https://github.com/jxnblk/mdx-deck/tree/master/packages/gatsby-theme). Thanks for your interest 💜
+Assessment for Hyper Island - Individual Project Module
+
+<!-- > 🚨 This starter is now archived in favor of [`gatsby-theme-mdx-deck`](https://github.com/jxnblk/mdx-deck/tree/master/packages/gatsby-theme). Thanks for your interest 💜
 
 ---
 
@@ -63,4 +65,4 @@ Examples:
 
 - Fabian Schultz ([@fschultz\_](https://twitter.com/fschultz_))
 - Frank Murphy ([AnIrishDuck](https://github.com/AnIrishDuck))
-- Stefan Probst ([stefanprobst](https://github.com/stefanprobst))
+- Stefan Probst ([stefanprobst](https://github.com/stefanprobst)) -->

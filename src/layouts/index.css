@@ -134,8 +134,8 @@ h1 {
 
 h2 {
   font-size: 120%;
-
-  margin-bottom: 0.5rem;
+  width: 75%;
+  margin: 0 auto 0.5rem auto;
 }
 
 p {
@@ -173,4 +173,12 @@ header a:hover {
 
 header span {
   color: var(--text);
+}
+
+/*custom classes*/
+
+.subText {
+  font-size: small;
+  width: 50%;
+  margin: 0 auto;
 }
